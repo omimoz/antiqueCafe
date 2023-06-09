@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #4c2d2d;
+  --secondary-color: #65bc6917;
+  --body-bg: #e1c59033;
+  --primary-danger: #FF4D4F;
+  --secondary-danger: #FFF1F0;
+  --primary-warning: #FAAD14;
+  --secondary-warning: #FFF7E6;
+  --primary-text: rgba(0, 0, 0, 0.65);
+  --secondary-text: rgba(0, 0, 0, 0.5);
+  --primary-blue: #096DD9;
+  --secondary-blue: #E6F7FF;
+  --primary-skyblue: #13C2C2;
+  --primary-skyblue: #E6FFFB;
+
+}
+
+@font-face {
+  font-family: ahganirya;
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/ahganirya.ttf');
+  src: url('./assets/fonts/ahganirya.ttf') format('truetype');
+}
+
+a,
+div {
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--body-bg);
+}
+
+.hero-slider-menu-nav-wrapper {
+  z-index: 10;
+}
+
+.hero-slider-overlay {
+  z-index: 10;
+}
+
+.hero-slider-previous {
+  z-index: 10;
+}
+
+.hero-slider-next {
+  z-index: 10;
+}
