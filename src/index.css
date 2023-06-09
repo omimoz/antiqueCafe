@@ -35,17 +35,17 @@ body {
 }
 
 .hero-slider-menu-nav-wrapper {
-  z-index: 10;
+  z-index: 10 !important;
 }
 
 .hero-slider-overlay {
-  z-index: 10;
+  z-index: 10 !important;
 }
 
 .hero-slider-previous {
-  z-index: 10;
+  z-index: 10 !important;
 }
 
 .hero-slider-next {
-  z-index: 10;
+  z-index: 10 !important;
 }

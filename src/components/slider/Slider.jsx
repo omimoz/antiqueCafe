@@ -5,7 +5,6 @@ import Wrapper from "../Wrapper/Wrapper";
 import useDimenstion from "../../hooks/useDimenstion";
 import { style } from "./style";
 import Title from "../Titles/Title";
-import Button from "../Button/Button";
 const Slider = () => {
   const [current, setCurrent] = useState(0);
   const { width } = useDimenstion();
@@ -25,27 +24,23 @@ const Slider = () => {
         <Wrapper>
           <div className="innerWrapper">
             <Title>{images[current].title}</Title>
-            <p>{images[current].desc}</p>
-            <div className="btn">
-              <Button type={"primary"}>Learn More</Button>
-            </div>
           </div>
         </Wrapper>
       </Overlay>
       {width < 600
-        ? mobImages.map((item, index) => (
+        ? mobImages.map((item) => (
             <Slide
-              key={index}
-              label={item.title}
+              key={item.id}
+              label={item.id}
               background={{
                 backgroundImageSrc: item.url,
               }}
             />
           ))
-        : images.map((item, index) => (
+        : images.map((item) => (
             <Slide
-              key={index}
-              label={item.title}
+              key={item.id}
+              label={item.id}
               background={{
                 backgroundImageSrc: item.url,
               }}
