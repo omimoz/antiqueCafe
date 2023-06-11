@@ -1,11 +1,12 @@
 import { NavItems } from "../../data/NavItems";
+import useDimenstion from "../../hooks/useDimenstion";
 import { style } from "./style";
 import Logo from "/Logo.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 const Nav = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-console.log(pathname)
+  const { width } = useDimenstion();
   return (
     <div className={style(pathname)}>
       <div
@@ -14,7 +15,7 @@ console.log(pathname)
           navigate("/");
         }}
       >
-        <img alt="logo" src={Logo} width={120} />
+        <img alt="logo" src={Logo} width={width < 700 ? 160 : 250} />
       </div>
       <div className="menu">
         <ul>

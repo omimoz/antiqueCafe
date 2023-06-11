@@ -17,7 +17,7 @@ export const style = (pathname) => css`
   .logo {
     cursor: pointer;
     display: flex;
-    padding: 1rem 0;
+    padding: .2rem 0;
   }
   .menu {
     li {

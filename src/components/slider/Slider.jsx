@@ -31,7 +31,7 @@ const Slider = () => {
         ? mobImages.map((item) => (
             <Slide
               key={item.id}
-              label={item.id}
+              label={" "}
               background={{
                 backgroundImageSrc: item.url,
               }}
@@ -40,7 +40,7 @@ const Slider = () => {
         : images.map((item) => (
             <Slide
               key={item.id}
-              label={item.id}
+              label={" "}
               background={{
                 backgroundImageSrc: item.url,
               }}

@@ -1,75 +1,72 @@
 import { css } from "@emotion/css";
-import AboutImg from "/about.jpg";
-import LinkTo from "../components/Links/LinkTo";
-import Title from "../components/Titles/Title";
 import useDimenstion from "../hooks/useDimenstion";
+import AboutImg1 from "/about1.jpg";
+import AboutImg2 from "/about2.jpg";
+import Title from "../components/Titles/Title";
 const About = () => {
   const { width } = useDimenstion();
   return (
     <div className={style(width)}>
-      <section>
-        <div className="HeaderImg">
-          <img alt="aboutHead" src={AboutImg} />
-          <LinkTo link={"main"} styles="scroll">
-            <div className="field">
-              <div className="mouse"></div>
-            </div>
-          </LinkTo>
+      <div className="header">
+        <Title>ABOUT US</Title>
+      </div>
+
+      <p className="firstLine">
+        Welcome to Antique Cafe, a journey through time and taste At Antique
+        cafe, we believe that great experiences are created by seamlessly
+        blending the past with the present. With a passion for history, culture,
+        and exceptional coffee, we have carved a unique space for ourselves in
+        the heart of Tehran. Now, we are thrilled to announce that Antique Café
+        is expanding its horizons and bringing its distinctive charm to the
+        vibrant city of Dubai.
+      </p>
+      <section className="sec">
+        <div className="imgSec">
+          <img alt="about1" src={AboutImg1} />
+        </div>
+        <div className="textSec">
+          <Title>Our Story</Title>
+          <p>
+            Founded in Tehran in 2018, Antique Café was born out of a deep
+            appreciation for antiques and a desire to create an extraordinary
+            café experience. The brainchild of a group of avid collectors and
+            coffee enthusiasts, our café quickly became a beloved destination
+            for locals and tourists alike. Over the years, Antique Café has
+            earned a reputation for its meticulous curation of antique
+            furniture, decor, and artifacts, transporting patrons to a bygone
+            era while tantalizing their taste buds.
+          </p>
         </div>
       </section>
-      <div className="Wrappcontent">
-        <div className="title">
-          <Title>About Us</Title>
+      <section className="sec">
+        <div className="textSec">
+          <Title>Our move to Dubai</Title>
+          <p>
+            After establishing a loyal following in Tehran, we are thrilled to
+            embark on a new adventure in Dubai. With its dynamic cultural scene
+            and diverse population, Dubai offers the perfect backdrop for
+            Antique Café to flourish. We are excited to introduce our unique
+            concept to Dubai&apos;s discerning residents and visitors, creating
+            an oasis of serenity amidst the bustling cityscape.
+          </p>
+          <p>
+            As we set foot in this cosmopolitan city, we bring with us an array
+            of antique treasures carefully curated to captivate and inspire. Our
+            team of passionate connoisseurs will continue to scour the globe,
+            seeking out exceptional antiques that breathe new life into our
+            café. Each visit to Antique Café will be an opportunity to discover
+            something extraordinary, both in our surroundings and on your plate.
+          </p>
+          <p>
+            We look forward to welcoming you to Café Antique Dubai, where time
+            stands still, and memories are forged over a cup of exceptional
+            coffee.
+          </p>
         </div>
-        <section id="main">
-          <div className="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
-            </p>
-          </div>
-        </section>
-      </div>
+        <div className="imgSec">
+          <img alt="about2" src={AboutImg2} />
+        </div>
+      </section>
     </div>
   );
 };
@@ -77,9 +74,20 @@ const About = () => {
 export default About;
 const style = (width) => css`
   max-width: 1600px;
+  padding: 20px;
   margin: 0 auto;
   .HeaderImg {
     position: relative;
+  }
+  .firstLine {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 20px;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 1px solid #00000029;
+    margin-bottom: 2%;
   }
   .Wrappcontent {
     padding: 12px;
@@ -95,53 +103,32 @@ const style = (width) => css`
     position: relative;
     z-index: 0;
     width: 100%;
-    border-radius: 0px 0px 1rem 1rem;
+    border-radius: 5px;
   }
-  .scroll {
-    position: absolute;
-    bottom: 5%;
-    z-index: 47;
+  .sec {
+    margin-bottom: 5%;
+    display: ${width < 1200 ? "block" : "flex"};
+    flex-wrap: wrap;
     width: 100%;
-    left: 0;
-    color: red;
-    text-align: center;
-    display: ${width < 800 ? "none" : "block"};
-  }
-
-  .mouse {
-    width: 30px;
-    height: 60px;
-    border: 3px solid #333;
-    border-radius: 60px;
-    position: relative;
-    margin: 0 auto;
-    &::before {
-      content: "";
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #333;
-      border-radius: 50%;
-      opacity: 1;
-      animation: wheel 2s infinite;
-      -webkit-animation: wheel 2s infinite;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .imgSec {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
     }
-  }
-
-  @keyframes wheel {
-    to {
-      opacity: 0;
-      top: 60px;
-    }
-  }
-
-  @-webkit-keyframes wheel {
-    to {
-      opacity: 0;
-      top: 60px;
+    .textSec {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      align-self: normal;
+      justify-content: center;
+      border: 1px solid #e6e6e6;
+      padding: 2rem;
     }
   }
 `;

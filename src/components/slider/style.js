@@ -2,24 +2,18 @@ import { css } from "@emotion/css";
 export const style = (width) => css`
   position: relative;
   .hero-slider-overlay {
-    max-width: 550px;
+    max-width: 580px;
     position: relative;
-    left: ${width < 700 ? "0%" : width < 900 ? "10%" : "20%"};
+    left: 0%;
+    top: ${width < 700 ? 0 : "-11rem"};
     color: aliceblue;
-    margin: ${width < 700 ? "0 auto" : width < 900 ? "0" : "0"};
+    margin: 0 auto;
     z-index: 10;
   }
   .innerWrapper {
     padding: 1rem;
     h1 {
-      background: linear-gradient(
-        to top,
-        #00000000 0,
-        #0000006e,
-        #00800000 83%
-      );
       padding: 5rem 1rem;
-      display: table-cell;
     }
     p {
       text-align: justify;
@@ -29,5 +23,12 @@ export const style = (width) => css`
   .btn {
     width: 100%;
     text-align: right;
+  }
+  .hero-slider-menu-nav-button-description {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
   }
 `;
