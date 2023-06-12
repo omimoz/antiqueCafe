@@ -119,6 +119,7 @@ const style = (width) => css`
       flex-direction: column;
       flex-basis: 100%;
       flex: 1;
+      padding: ${width < 1200 ? "5% 0" : "0"};
     }
     .textSec {
       display: flex;
@@ -128,6 +129,7 @@ const style = (width) => css`
       align-self: normal;
       justify-content: center;
       border: 1px solid #e6e6e6;
+      border-radius: 5px;
       padding: 2rem;
     }
   }
