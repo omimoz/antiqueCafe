@@ -5,13 +5,13 @@ export const images = [
     id: "Antique cafe: 1",
   },
   {
-    url: "./8.jpg",
+    url: "./3.jpg",
     id: "Antique cafe: 2",
     title:
       "The taste and smell of the finest and purest coffee ever to be served, will take our guests to the time of surrounding antiques 2",
   },
   {
-    url: "./3.jpg",
+    url: "./8.jpg",
     id: "Antique cafe: 3",
     title:
       "Antique cafe owns one of the most valuable collections in the middle east 3",
@@ -45,13 +45,13 @@ export const mobImages = [
     title: "Antique cafe is coming to Dubai 1",
   },
   {
-    url: "./8-mob.jpg",
+    url: "./3-mob.jpg",
     id: "Antique cafe: 2",
     title:
       "The taste and smell of the finest and purest coffee ever to be served, will take our guests to the time of surrounding antiques 2",
   },
   {
-    url: "./3-mob.jpg",
+    url: "./8-mob.jpg",
     id: "Antique cafe: 3",
     title:
       "Antique cafe owns one of the most valuable collections in the middle east 3",

@@ -27,7 +27,7 @@ const Slider = () => {
           </div>
         </Wrapper>
       </Overlay>
-      {width < 600
+      {width < 700
         ? mobImages.map((item) => (
             <Slide
               key={item.id}
