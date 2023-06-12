@@ -5,7 +5,7 @@ export const style = (width) => css`
     max-width: 580px;
     position: relative;
     left: 0%;
-    top: ${width < 700 ? "-13rem" : "-11rem"};
+    top: ${width < 700 ? "-11rem" : "-11rem"};
     color: aliceblue;
     margin: 0 auto;
     z-index: 10;
