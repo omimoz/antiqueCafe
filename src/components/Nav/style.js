@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 export const style = (pathname) => css`
   position: ${pathname === "/" ? "absolute" : "relative"};
-  background: ${pathname === "/" ? "transparent" : "white"};
+  background: #ffffff3d;
   top: 0;
   left: 0;
   z-index: 100;
@@ -17,7 +17,7 @@ export const style = (pathname) => css`
   .logo {
     cursor: pointer;
     display: flex;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
   }
   .menu {
     li {
