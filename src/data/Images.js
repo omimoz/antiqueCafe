@@ -23,7 +23,7 @@ export const images = [
       "We showcase not just ordinary antiques, but mesmerizing Kings' and high profile characters' belongings 4",
   },
   {
-    url: "./5.jpg",
+    url: "./5b.jpg",
     id: "Antique cafe: 5",
     title: "It would be an honor to serve time travellers 5",
   },
